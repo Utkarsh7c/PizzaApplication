@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Shopping </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ <script src="./scripts/Controllers/Product-controller.js" type="module"></script>
+  <style>
+    @keyframes  slideInLeft {
+      from{
+        transform: translate(-300px);
+      }
+      to{
+        transform: translate(0);
+      }
+    }
+    h1{
+      animation: slideInLeft  1s ease-in  0s  1  normal  both;
+   
+    }
+    .img {
+      padding-left: 1%;
+    }
+    #we{
+            background-color:#e6e8eb;
+    }
+
+  nav  ul {
+      list-style: none;
+      display: flex;
+      gap: 200px;
+      border: 4px solid whitesmoke;
+    }
+
+     nav ul li {
+      border: 1px solid white;
+      font-size: 20px;
+    }
+
+    button:hover {
+      background-color: red;
+    }
+
+    h1:hover {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img class="img " src="https://th.bing.com/th/id/OIP.WTI6PdprvpZtkEOQqNxvaQHaHa?pid=ImgDet&rs=1" height="100px"
+      width="100px " alt="">
+
+    <h1 class="alert alert-info text-center">Pizza Shop </h1>
+    <nav>
+      <ul>
+        <li> <button>Pizzas</button></li>
+        <li> <button> Sides</button></li>
+        <li> <button> Dessert</button> </li>
+        <li> <button> Drinks</a></button></li>
+        <li> <button> <a href="i.html">Deals </a></button></li>
+      </ul>
+    </nav>
+    <div class="row" id="we">
+      <div class="col-8">
+        <div class="row" id="output">
+          <!-- <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="https://i.redd.it/lnqe0s84jkp11.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Veggie Supreme</h5>
+              <p class="card-text">A supreme combination of Black Olives, Green Capsicum, Mushroom, Onion, spicy Red Paprika & juicy Sweet Corn with flavourful pan sauce and 100% mozzarella cheese.
+
+              </p>
+              <a href="#" id="hi" class="btn btn-primary">View More</a>
+            </div>
+            
+          </div>
+          
+    </div>
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="https://i.redd.it/lnqe0s84jkp11.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Veggie Supreme</h5>
+              <p class="card-text">A supreme combination of Black Olives, Green Capsicum, Mushroom, Onion, spicy Red Paprika & juicy Sweet Corn with flavourful pan sauce and 100% mozzarella cheese.
+
+              </p>
+              <a href="#" class="btn btn-primary">View More</a>
+            </div>
+            
+          </div>
+    </div>
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="https://i.redd.it/lnqe0s84jkp11.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Veggie Supreme</h5>
+              <p class="card-text">A supreme combination of Black Olives, Green Capsicum, Mushroom, Onion, spicy Red Paprika & juicy Sweet Corn with flavourful pan sauce and 100% mozzarella cheese.
+
+              </p>
+              <a href="#" class="btn btn-primary">View More</a>
+            </div>
+            
+          </div>
+    </div>
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="https://i.redd.it/lnqe0s84jkp11.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Veggie Supreme</h5>
+              <p class="card-text">A supreme combination of Black Olives, Green Capsicum, Mushroom, Onion, spicy Red Paprika & juicy Sweet Corn with flavourful pan sauce and 100% mozzarella cheese.
+
+              </p>
+              <a href="#" class="btn btn-primary">View More</a>
+            </div>
+            
+          </div>
+    </div>
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="https://i.redd.it/lnqe0s84jkp11.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Veggie Supreme</h5>
+              <p class="card-text">A supreme combination of Black Olives, Green Capsicum, Mushroom, Onion, spicy Red Paprika & juicy Sweet Corn with flavourful pan sauce and 100% mozzarella cheese.
+
+              </p>
+              <a href="#" class="btn btn-primary">View More</a>
+            </div>
+            
+          </div>
+    </div>
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="https://i.redd.it/lnqe0s84jkp11.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Veggie Supreme</h5>
+              <p class="card-text">A supreme combination of Black Olives, Green Capsicum, Mushroom, Onion, spicy Red Paprika & juicy Sweet Corn with flavourful pan sauce and 100% mozzarella cheese.
+
+              </p>
+              <a href="#" class="btn btn-primary">View More </a>
+            </div>
+            
+          </div>
+    </div> -->
+    
+        </div>
+      </div>
+      <div class="col-4" >
+        <ul id="basket"></ul>
+        <!-- <div class="col-4 border border-1">
+          <h2>Total Bill</h2>
+          <div class="card">
+            Pizza 1
+            Pizza 2
+            Pizza 3
+          </div>
+          <div class="card"  >
+            Total Pizza : <span>3</span>
+            pizza amount: <span>12000</span>
+          </div>
+          <button id="clickme" class="btn btn-success w-100 mt-2">Pay Bill</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
